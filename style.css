@@ -1,0 +1,330 @@
+/*----------------------
+- CSS - teilaufgabe_b -
+----------------------
+LEON MUTLU;
+Prüflingsnummer: 3302;
+- Zwischenprüfung - Frühjahr 2022 - teilaufgabe_b -
+----------------------*/
+
+html, body  {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+section {
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, a {
+ font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-weight: 600;
+ color: #222B3B;
+ text-transform: uppercase;
+}
+
+h2 {
+    color: #555E75;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4, p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr {
+    width: 30px;
+    height: 3px;
+    background: #222BB2;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+li, #logo, #pfeil, #mitmachen, img, .button {
+    transition: all 400ms; -webkit-transition: all 400ms; -moz-transition: all 400ms; -o-transition: all 400ms;
+}
+
+/*-- HEADER ------------------------------------------------------------------------------------------>*/
+
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#logo {
+    width: 60px;
+    float: left;
+    margin: 10px 10px 10px 50px;
+}
+
+#logo img {
+   width: 100%;
+}
+
+#logo:hover {
+    opacity: 0.9;
+}
+
+header nav {
+    float: center;
+    margin: auto 50px 0 0;
+}
+
+header nav ul {
+    float: center;
+    margin-right: 16px;
+    margin-left: auto;
+}
+
+header nav ul li {
+    float: left;
+    margin-right: 16px;
+}
+
+header nav ul li a {
+    font-size: 16px;
+}
+
+header nav ul li:hover {
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+header nav ul li a:hover {
+    opacity: 0.6;
+   
+}
+
+#social img {
+    width: 30px;
+    float: right;
+    margin: auto 50px 0 0;
+}
+
+#social img:hover {
+    width: 30px;
+    float: right;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/*-- HOME ------------------------------------------------------------------------------------------>*/
+
+#home {
+    background: url(img/background1.png), white;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+       
+}
+
+#home h1{
+    margin: 240px auto 0 auto;
+    font-size: 110px;
+}
+
+#home h2{
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+}
+
+#home img {
+    width: 32px;
+    margin-top: 150px;
+    opacity: 0.7;
+    
+}
+
+#home img:hover {
+    width: 36px;
+    margin-top: 154px;
+    opacity: 0.4;
+}
+
+/*-- UBERUNS ------------------------------------------------------------------------------------------>*/
+
+#uberuns img {
+    width: 240px;
+    margin-top: 30px;
+}
+
+#uberuns img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+#uberuns h4 {
+    font-size: 25px;
+}
+
+#uberuns p {
+    width: 700px;
+    margin: 60px auto 0 auto;
+    padding-bottom: 40px;
+}
+
+/*-- MITMACHEN ------------------------------------------------------------------------------------------>*/
+
+#mitmachen {
+    background-color: #DFDFDF;
+}
+
+#mitmachen h1{
+    margin: 240px auto 0 auto;
+    font-size: 110px;
+}
+
+#mitmachen h2{
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+}
+
+#mitmachen h4 {
+    font-size: 25px;
+}
+
+#mitmachen p {
+    width: 700px;
+    margin: 60px auto 0 auto;
+}
+
+#projektbilder {
+    width: 900px;
+    margin: 0 auto 0 auto;
+    background-color: #DFDFDF;
+}
+
+#projektbilder ul {
+    padding: 0;
+}
+
+#projektbilder ul li {
+    width: 33.3%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+#projektbilder img {
+    width: 280px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+#projektbilder img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*-- Termine ------------------------------------------------------------------------------------------>*/
+
+#termine h1{
+    margin: 240px auto 0 auto;
+    font-size: 110px;
+}
+
+#termine h2{
+    margin: 0 auto 0 auto;
+    font-size: 25px;
+}
+
+#termine h4 {
+    font-size: 25px;
+}
+
+#termine p {
+    width: 500px;
+    margin: 60px auto 0 auto;
+}
+
+
+/*-- KONTAKT ------------------------------------------------------------------------------------------>*/
+
+form input, textarea {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 2px solid;
+    border-color: #222BB2;
+    margin: .4rem;
+}
+
+form input:first-child {
+    margin-top: 10px;
+}
+
+form input {
+    width: 552px;
+    height: 30px;
+}
+
+form legend {
+    width: 500px;
+    height: 200px;
+}
+
+form fieldset {
+    width: 500px;
+    height: 200px;#
+    float: center;
+}
+
+.input_text {
+    color:#555E75;
+    padding-left: 10px;
+}
+
+.button {
+    background-color: #f0f0f0;
+    color: #555E75;
+    width: 566px;
+    height: 50px;
+}
+
+.button:hover {
+    background-color: #555E75;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+/*-- FORMULAR ------------------------------------------------------------------------------------------>*/
+
+p, label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+/*-- FOOTER ------------------------------------------------------------------------------------------>*/
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #555E75;
+}
+
+footer p {
+    font-size: 12px;
+    color: #f0f0f0;
+    padding-top: 30px;
+}
